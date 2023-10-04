@@ -1,3 +1,11 @@
+document.addEventListener('DOMContentLoaded', function () {
+  const botonCompra = document.querySelector('button');
+
+  botonCompra.addEventListener('click', function () {
+    realizarVenta();
+  });
+});
+
 const Producto = function (item, precio, stock) {
   this.item = item;
   this.precio = precio;
